@@ -1,85 +1,114 @@
 Student Management REST API
-A simple REST API built using Node.js and Express.js for managing student records.
+A simple REST API built using Node.js and Express.js to manage student records.
 
-Features
-Retrieve all students
-Retrieve a student by ID
-Add a new student
-Update student details
-Delete a student
-Search students by department
-Input validation
-Proper HTTP status codes
-Error handling middleware
+Features:
+ Get all students
+ Get a student by ID
+ Add a new student
+ Update student details
+ Delete a student
+ Search students by department
+ Input validation
+ Error handling middleware
+ Proper HTTP status codes
+
 Technologies Used
-Node.js
-Express.js
-Installation
+ Node.js
+ Express.js
+
+Installation:
+
 Clone the repository:
 
-git clone https://github.com/hariprasad987-create/student-management-api.git
-Move into the project directory:
+git clone https://github.com/hariprasad987-create/week7-web-devolepment.git
 
-cd student-management-api
+
+Move into the project folder:
+
+cd week7-web-devolepment
+
+
 Install dependencies:
 
 npm install
-Run the Server
+
+ Run the Server
 node server.js
-Server will run on:
+
+
+Server runs at:
 
 http://localhost:3000
-API Endpoints
+
+ API Endpoints
 Get All Students
 GET /students
-Get Student By ID
+
+Get Student by ID
 GET /students/:id
+
+
 Example:
 
 GET /students/1
+
 Add New Student
 POST /students
+
+
 Request Body:
 
+JSON
 {
-  "id": 3,
-  "name": "Hari Prasad",
-  "department": "AI-ML",
-  "semester": 4
+"id": 3,
+"name": "Hari Prasad",
+"department": "AI-ML",
+"semester": 4
 }
 Update Student
 PUT /students/:id
+
+
 Request Body:
 
+JSON
 {
-  "semester": 5
+"semester": 5
 }
 Delete Student
 DELETE /students/:id
+
+
 Example:
 
 DELETE /students/3
-Search by Department
+
+Search Students by Department
 GET /students?department=CSE
-HTTP Status Codes
-200 OK
-201 Created
-400 Bad Request
-404 Not Found
-500 Internal Server Error
+
+ HTTP Status Codes
+Code	Description
+200	OK
+201	Created
+400	Bad Request
+404	Not Found
+500	Internal Server Error
+
 Project Structure
-student-management-api/
+week7-web-devolepment/
 │
-├── node_modules/
+├── server.js
 ├── package.json
 ├── package-lock.json
-├── server.js
 └── README.md
-Testing
-The API can be tested using:
 
-Postman
+Testing
+
+Tested using:
 Thunder Client
-Browser (for GET requests)
-Author
+Browser (GET Requests)
+
+
+Author:
 Hari Prasad
+
